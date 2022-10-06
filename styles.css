@@ -10,11 +10,6 @@ header {
    align-items: center;
 }
 
-header .brand {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
 header img {
     display: flex;
     position: relative;
@@ -58,9 +53,9 @@ nav a:hover {
 nav a {
     text-decoration: none;
     padding: 5px 10px;
-    color: blue;
+    color: white;
     margin-right: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .hero-banner {
@@ -90,4 +85,42 @@ nav a {
     line-height: 1.2;
     display: inline;
     border-radius: 50px;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.page-information {
+    max-width: 88%
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid grey;
+    font-size: 2vw;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 77%;
+}
+
+.page-section p {
+    margin-bottom: 20px;
 }
