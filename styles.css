@@ -124,3 +124,50 @@ main {
 .page-section p {
     margin-bottom: 20px;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 5px solid grey;
+    background-color: white;
+    color: black;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+span {
+    align-items: center;
+}
+
+.flex-item:first child {
+    min-height: 400px;
+    flex-basis: 100%
+}
+
+.flex-item:hover {
+    border-radius: 35px;
+    border-color: black;
+}
+
+.flex-item div {
+    background-color: grey;
+    padding: 8px 10px;
+}
+
+.flex-item h3 {
+    font-size: 1.8rem;
+}
+
