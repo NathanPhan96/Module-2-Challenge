@@ -1,13 +1,11 @@
 header {
-   background-color: grey;
-   color: white;
-   width: 100%;
-   padding: 10px 6% 10px 0;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   align-items: center;
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: grey;
 }
 
 header img {
@@ -15,7 +13,7 @@ header img {
     position: relative;
     max-width: 200px;
     max-height: 200px;
-    border-radius: 100%;
+    border-radius: 90%;
 }
 
 h1 {
@@ -55,17 +53,17 @@ nav a {
     padding: 5px 10px;
     color: white;
     margin-right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .hero-banner {
     background-image: url(https://media1.giphy.com/media/IuVFGSQZTd6TK/giphy.gif);
     background-size: cover;
     background-position: center;
-    background-blend-mode: soft-light
-    min-height: 200px;
+    background-blend-mode: soft-light;
+    min-height: 175px;
     color: grey;
-    padding: 2% 7%;
+    padding: 2% 6%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -81,7 +79,7 @@ nav a {
     color: blue;
     margin: 0;
     padding: 0px 5px;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 1.2;
     display: inline;
     border-radius: 50px;
@@ -93,7 +91,7 @@ main {
 }
 
 .page-information {
-    max-width: 88%
+    max-width: 88%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -133,8 +131,7 @@ main {
 
 .flex-item {
     border: 5px solid grey;
-    background-color: white;
-    color: black;
+    color: white;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -143,18 +140,18 @@ main {
     padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
-    background-size: 150%;
+    background-size: 18%;
     transition: all 0.5s;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 span {
     align-items: center;
 }
 
-.flex-item:first child {
-    min-height: 400px;
-    flex-basis: 100%
+.flex-item:first-child {
+    min-height: 100px;
+    flex-basis: 100%;
 }
 
 .flex-item:hover {
@@ -163,11 +160,106 @@ span {
 }
 
 .flex-item div {
-    background-color: grey;
-    padding: 8px 10px;
+   padding: 28px 8px;
 }
 
 .flex-item h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
+#contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+#contact a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+#contact address a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline overline;
+}
+
+.project-1 {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/998015670469678103/EDBFFC3D6854452D657256B9B93F3F0F50B3C5AA/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+}
+
+.project-2 {
+    background-image: url(https://images.axios.com/gy1ow9G8C1pbrnWhf7A3v4VYf5g=/0x0:1920x1080/1920x1080/2019/06/17/1560779262474.gif);
+}
+
+.project-3 {
+    background-image: url(https://assets.materialup.com/uploads/c3c608ec-3634-4311-b2c6-fdb9a576c481/preview.gif);
+}
+
+.project-4 {
+    background-image: url(https://media.tenor.com/1Uv5PD3T_mMAAAAC/sony-sony-sony.gif);
+}
+
+.project-5 {
+    background-image: url(https://media.tenor.com/-gHNxt-U3voAAAAC/razer-razer-walppaper.gif);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center; 
+}
+
+header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+}
+
+nav {
+    justify-content: center;
+}
+
+.page-section > h2,
+.page-section > div {
+    flex: 0 0 100%;
+}
+
+.page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+        flex-basis: 100%;   
+    }
+
+.flex-item:first-child {
+    min-height: 150px;
+    }
+
+.hero-banner {
+    justify-content: center;
+    text-align: center;
+    }
+
+.contact address {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+}
